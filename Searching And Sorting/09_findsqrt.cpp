@@ -41,7 +41,7 @@ int main()
 {
 
     int n;
-    cout << "Enter the NUmber : ";
+    cout << "Enter the Number : ";
     cin >> n;
 
     // calling function
