@@ -47,8 +47,8 @@ int searchInNearlySortedArray(int arr[], int n, int target)
 int main()
 {
 
-    // int arr[] = {20, 10, 30, 50, 40, 70, 60};
-    int arr[] = {20, 30};
+    int arr[] = {20, 10, 30, 50, 40, 70, 60};
+    // int arr[] = {20, 30};
     int n = 7;
     int target;
     cout << "Enter Target : ";
