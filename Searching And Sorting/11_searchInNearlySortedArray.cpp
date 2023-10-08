@@ -3,7 +3,6 @@ using namespace std;
 
 int searchInNearlySortedArray(int arr[], int n, int target)
 {
-
     int start = 0;
     int end = n - 1;
     int mid = start + (end - start) / 2;
