@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Print Array
+// Printing Array
 
 void printArrya(vector<int> &arr)
 {
@@ -16,11 +16,12 @@ void printArrya(vector<int> &arr)
 
 void selectionSort(vector<int> &arr, int n)
 {
-
+    // Rounds : N-1
     for (int i = 0; i < n - 1; i++)
     {
 
         int minIndex = i;
+        // Index  of min element
         for (int j = i + 1; j < n; j++)
         {
 
@@ -35,13 +36,51 @@ void selectionSort(vector<int> &arr, int n)
     }
 }
 
+// 2 Bubble Sort
+
+void bubbleSort(vector<int> &arr, int n)
+{
+
+    for (int round = 1; round < n; round++)
+    {
+        bool swapped = false;
+
+        for (int j = 0; j < n - round; j++)
+        {
+
+            if (arr[j] > arr[j + 1])
+            {
+                swapped = true;
+                swap(arr[j], arr[j + 1]);
+            }
+        }
+
+        // Agar swap nhi hua mean
+        //  Sort ho chuka
+        if (swapped == false)
+        {
+            break;
+        }
+    }
+}
+
+// 3 Insertion Sort
+
 int main()
 {
 
     vector<int> arr = {5, 4, 2, 1, 3};
     int n = arr.size();
 
-    // calling function
+    // calling function 1
     selectionSort(arr, n);
     printArrya(arr);
+    cout << endl;
+
+    // calling function 2
+    bubbleSort(arr, n);
+    printArrya(arr);
+    cout << endl;
+
+    // calling function 3
 }
