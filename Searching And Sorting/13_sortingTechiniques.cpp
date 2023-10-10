@@ -66,6 +66,37 @@ void bubbleSort(vector<int> &arr, int n)
 
 // 3 Insertion Sort
 
+void insertionSort(vector<int> &arr, int n)
+{
+    for (int round = 1; round < n; round++)
+    {
+
+        // 1 fetch
+        int val = arr[round];
+
+        // 2 compare
+        int j;
+        for (j = round - 1; j >= 0; j--)
+        {
+
+            if (arr[j] > val)
+            {
+                // shift
+                arr[j + 1] = arr[j];
+            }
+            else
+            {
+                // val bada rhega then nothing to do
+                // stop
+                break;
+            }
+        }
+
+        // after shifting all elements copy
+        arr[j + 1] = val;
+    }
+}
+
 int main()
 {
 
@@ -83,4 +114,7 @@ int main()
     cout << endl;
 
     // calling function 3
+    insertionSort(arr, n);
+    printArrya(arr);
+    cout << endl;
 }
