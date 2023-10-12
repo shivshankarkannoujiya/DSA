@@ -13,7 +13,6 @@ void toUpperCase(char ch[], int len)
         // check if small case char then convert
         if (currChar >= 'a' && currChar <= 'z')
         {
-
             ch[index] = currChar - 'a' + 'A';
         }
         index++;
