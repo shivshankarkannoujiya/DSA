@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Macros
 #define PI 3.14
 #define MAXX(x, y) (x > y ? x : y)
 
@@ -12,7 +13,7 @@ float circleArea(float r)
 float circleCircumference(float r)
 {
     return 2 * PI * r;
-} 
+}
 
 // finding max
 
