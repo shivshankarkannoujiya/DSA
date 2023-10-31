@@ -16,7 +16,6 @@ public:
     // ctor
     Student(string name, int age, int rollno, string gf)
     {
-
         this->name = name;
         this->age = age;
         this->rollno = rollno;
@@ -24,6 +23,7 @@ public:
         cout << "Ctor is called..." << endl;
     }
 
+    // Methods
     void study()
     {
         cout << "Studying" << endl;
