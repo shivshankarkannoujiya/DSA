@@ -26,6 +26,7 @@ void printLL(Node *&head)
     while (temp != NULL)
     {
         cout << temp->data << " -> ";
+        // cout << temp->next << " -> ";
         temp = temp->next;
     }
     cout << endl;
