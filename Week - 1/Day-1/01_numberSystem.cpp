@@ -31,6 +31,24 @@ vector<int> convertToBinary(int n)
 }
 
 
+// TODO: Check if a number is odd
+bool isOdd(int n){
+    if(n & 1 == 1){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+// TODO: Check if the ith bit is set or not 
+bool isBitSet(int n, int i){
+    if(((n>>i) & 1 == 1)){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 
 int main()
@@ -38,5 +56,14 @@ int main()
     int decimalNum = 11;
     // vector<int> BinaryNumber = convertToBinary(decimalNum);
     // print(BinaryNumber);
+
+    // bool ans = isOdd(decimalNum);
+    // cout<<"Ans is: "<<ans<<endl;
+
+    // int i = 2;
+    // bool ans = isBitSet(decimalNum, i);
+    // cout<<"Ans is: "<<ans<<endl;
+
+    
 
 }
